@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #010f6d;
+    background-image: url(../img/headerbg.png);
+    box-shadow: 100px #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover {
+    background-color: #575757;
+}
+h1{
+    color: #3700fc;
+}
+.headerbg{
+    display: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.map{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.map-frame{
+    width: 1000px;
+    
+}
+.section {
+    margin-bottom: 20px;
+}
+.help-list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+}
+.help-exp{
+    line-height: 30px;
+}
+.section h2 {
+    color: #0073e6;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.contacts-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.contacts-tel{
+    white-space: nowrap;
+}
+.contacts-p{
+    margin: 0;
+    white-space: nowrap
+}
+@media (max-width: 768px) {
+    header {
+        background-image: none;
+        height: 150px;
+        padding: 5px;
+    }
+    .headerbg{
+        display: block;
+        height: 150px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .map-frame {
+        height: 250px;
+    }
+
+    .help-list {
+        gap: 10px;
+    }
+
+    .section h2 {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
